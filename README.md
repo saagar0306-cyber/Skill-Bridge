@@ -47,4 +47,5 @@ It helps users understand:
 ## 📂 Project Structure
 
 # Skill-Bridge
-Skill Bridge is an Ai powered Career Gap Analyzer which uses Gemini api
+SkillBridge leverages Google Gemini AI to analyze resumes, identify skill gaps, and deliver a personalized 4-week career roadmap.
+
