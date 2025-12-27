@@ -1,51 +1,65 @@
-# 🚀 SkillBridge – AI-Powered Career Gap Analyzer
+# SkillBridge - AI-Powered Career Gap Analyzer 🎯
 
-SkillBridge is a **production-ready Streamlit web application** that analyzes a user’s resume against a target job role and generates a **data-driven career gap report** using **Google Gemini AI**.
+**SkillBridge** is a production-ready Streamlit application that uses the **Google Gemini 1.5 Flash** model to analyze the gap between a user's current resume and their target career role. It provides a match score, identifies critical skill gaps, and generates a personalized 4-week roadmap to bridge those gaps.
 
-It helps users understand:
-- How well their skills match a desired role  
-- What critical gaps exist based on real market demand  
-- A clear **4-week actionable learning roadmap**
+Developed by **Sagar Singh** and team.
 
----
-
-## ✨ Features
-
-- 📄 **Resume Parsing**
-  - Supports **PDF, Image (PNG/JPG/JPEG), and TXT**
-  - OCR support using **Tesseract**
-
-- 🤖 **AI-Powered Analysis**
-  - Uses **Google Gemini AI**
-  - Generates structured, market-relevant insights
-
-- 📊 **Career Match Score**
-  - Percentage-based role compatibility score
-
-- 🎯 **Skill Gap Identification**
-  - Highlights missing or weak skills required by industry
-
-- 🗺️ **4-Week Learning Roadmap**
-  - Week-by-week plan with priorities and focus areas
-
-- 🎨 **Modern SaaS-Style UI**
-  - Dark mode design
-  - Clean cards and timeline layout
-
----
+## 🚀 Features
+* **Multi-Format Upload:** Supports PDF, Images (OCR), and Text files.
+* **AI Deep Analysis:** Uses Google Gemini to extract semantic meaning from resumes.
+* **Match Scoring:** Get an instant percentage score based on your target role.
+* **Critical Gap Identification:** Pinpoints exactly what skills or experiences you are missing.
+* **4-Week Action Plan:** A structured, week-by-week roadmap to help you become job-ready.
+* **Modern UI:** Sleek, dark-mode interface built with custom CSS in Streamlit.
 
 ## 🛠️ Tech Stack
+* **LLM:** Google Gemini 1.5 Flash
+* **Frontend:** Streamlit
+* **OCR & Extraction:** PyTesseract (Images), PyPDF2 (PDFs)
+* **Language:** Python 3.9+
 
-- **Frontend:** Streamlit  
-- **AI Model:** Google Gemini  
-- **OCR:** Tesseract  
-- **PDF Parsing:** PyPDF2  
-- **Language:** Python  
+## 🏁 Getting Started
+
+### 1. Prerequisites
+* You must have **Tesseract OCR** installed on your system.
+* You need a **Google Gemini API Key**.
+
+### 2. Installation
+```bash
+# Clone the repo
+git clone [https://github.com/SagarSingh/SkillBridge.git](https://github.com/SagarSingh/SkillBridge.git)
+cd SkillBridge
+
+# Install dependencies
+pip install streamlit google-generativeai PyPDF2 Pillow pytesseract
+3. Run the App
+Bash
+
+# Set your API Key (Replace 'your_key' with your actual key)
+export GEMINI_API_KEY='your_key_here'
+
+# Start Streamlit
+streamlit run app.py
+📂 Project Structure
+app.py: Main Streamlit application and AI logic.
+
+requirements.txt: List of necessary Python libraries.
+
+.env: (Optional) Local storage for your API key.
+
+🤝 Contributing
+Built with passion by Sagar Singh and his teammates. Feel free to fork and improve!
+
+📄 License
+Distributed under the MIT License.
+
 
 ---
 
-## 📂 Project Structure
-
-# Skill-Bridge
-SkillBridge leverages Google Gemini AI to analyze resumes, identify skill gaps, and deliver a personalized 4-week career roadmap.
-
+**One last tiny thing:** To make the "Install dependencies" part work for other people, make a new file in your GitHub called `requirements.txt` and paste these 5 lines into it:
+```text
+streamlit
+google-generativeai
+PyPDF2
+Pillow
+pytesseract
