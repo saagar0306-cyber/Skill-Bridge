@@ -1,6 +1,6 @@
 # SkillBridge - AI-Powered Career Gap Analyzer 🎯
 
-**SkillBridge** is a production-ready Streamlit application that uses the **Google Gemini 1.5 Flash** model to analyze the gap between a user's current resume and their target career role. It provides a match score, identifies critical skill gaps, and generates a personalized 4-week roadmap to bridge those gaps.
+**SkillBridge** is a production-ready Streamlit application that uses the **GROQ AI** model to analyze the gap between a user's current resume and their target career role. It provides a match score, identifies critical skill gaps, and generates a personalized 4-week roadmap to bridge those gaps.
 
 Developed by **Sagar Singh** and team.
 
@@ -13,7 +13,7 @@ Developed by **Sagar Singh** and team.
 * **Modern UI:** Sleek, dark-mode interface built with custom CSS in Streamlit.
 
 ## 🛠️ Tech Stack
-* **LLM:** Google Gemini 1.5 Flash
+* **LLM:** GROQ AI
 * **Frontend:** Streamlit
 * **OCR & Extraction:** PyTesseract (Images), PyPDF2 (PDFs)
 * **Language:** Python 3.9+
